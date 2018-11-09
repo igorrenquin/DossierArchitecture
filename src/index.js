@@ -474,7 +474,7 @@ const Sauvegarde = ({}) => (
   </div>
 );
 
-const SupervisionAntivirus = ({}) => (
+const Antivirus = ({}) => (
   <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
     <div
       style={{
@@ -485,10 +485,11 @@ const SupervisionAntivirus = ({}) => (
         color: "white"
       }}
     >
-      Supervision & Antivirus
+      Antivirus & Supervision
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+      <BlocTableau title="Antivirus" data={DA.Antivirus} />
+      <BlocTableau title="Supervision" data={DA.Supervision} />
     </div>
   </div>
 );
@@ -507,7 +508,10 @@ const Documentations = ({}) => (
       Documentations
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+      <BlocTableau
+        title="Schéma acteurs & processus"
+        data={DA.Documentations}
+      />
     </div>
   </div>
 );
@@ -526,7 +530,9 @@ const Observations = ({}) => (
       Observations
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+      <BlocTableau title="Cycle de vie" data={DA.ObservationsMOE} />
+      <BlocTableau title="Cycle de vie" data={DA.ObservationsMITECH} />
+      <BlocTableau title="Cycle de vie" data={DA.ObservationsPROD} />
     </div>
   </div>
 );
@@ -545,7 +551,7 @@ const Lifecycle = ({}) => (
       Cycle de vie
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+      <BlocTableau title="Observation MOE" data={DA.Lifecycle} />
     </div>
   </div>
 );
@@ -570,7 +576,8 @@ function App() {
 
       <Infogerance {...DA} />
       <Sauvegarde {...DA} />
-      <SupervisionAntivirus {...DA} />
+      <Antivirus {...DA} />
+
       <Documentations {...DA} />
       <Observations {...DA} />
       <Lifecycle {...DA} />

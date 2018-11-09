@@ -586,14 +586,104 @@
   ],
 
   "ServeursComposants": {},
+
   "MatricesFlux": {},
+
   "Dimmenssionnement": {},
+
   "UrlCertificats": {},
 
   "Infogerance": {},
+
   "Sauvegarde": {},
-  "SupervisionAntivirus": {},
-  "Documentations": {},
-  "Observations": {},
-  "Lifecycle": {}
+
+  "Antivirus": [
+    {
+      "Nom du serveur": "Nom du serveur",
+      "Spécifique": "OUI - NON",
+      "Paramétrage antivirus": "Détail des exclusions"
+    }
+  ],
+
+  "Supervision": [
+    {
+      "Nom du serveur": "Nom du serveur",
+      "Spécifique": "OUI - NON",
+      "Paramétrage antivirus": "Détail des exclusions"
+    }
+  ],
+
+  "Documentations": [
+    {
+      "Typologie": "Dossier d'Architecture (DA)",
+      "Nom document": "DA-[Nom application]",
+      "Entité": "ENTITE",
+      "Emplacement": "Lien vers le document"
+    },
+    {
+      "Typologie": "Dossier d'INstallation (DIN)",
+      "Nom document": "DIN-[Nom application]",
+      "Entité": "ENTITE",
+      "Emplacement": "Lien vers le document"
+    },
+    {
+      "Typologie": "Dossier d'EXploitation",
+      "Nom document": "DEX-[Nom application]",
+      "Entité": "ENTITE",
+      "Emplacement": "Lien vers le document"
+    },
+    {
+      "Typologie": "DROP",
+      "Nom document": "DROP-[Nom application]",
+      "Entité": "ENTITE",
+      "Emplacement": "Lien vers le document"
+    },
+    {
+      "Typologie": "Fiche Arrêt - Relance",
+      "Nom document": "FAR-[Nom application]",
+      "Entité": "ENTITE",
+      "Emplacement": "Lien vers le document"
+    },
+    {
+      "Typologie": "Fiche supervision",
+      "Nom document": "SUP-[Nom application]",
+      "Entité": "ENTITE",
+      "Emplacement": "Lien vers le document"
+    },
+    {
+      "Typologie": "Fiche de sauvegarde",
+      "Nom document": "SAUV-[Nom application]",
+      "Entité": "ENTITE",
+      "Emplacement": "Lien vers le document"
+    }
+  ],
+
+  "ObservationsMOE": [
+    {
+      "Date": "Date",
+      "Observation MOE": "Observation"
+    }
+  ],
+
+  "ObservationsMITECH": [
+    {
+      "Date": "Date",
+      "Observation MITECH": "Observation"
+    }
+  ],
+
+  "ObservationsPROD": [
+    {
+      "Date": "Date",
+      "Observation PROD": "Observation"
+    }
+  ],
+
+  "Lifecycle": [
+    {
+      "Date": "Date",
+      "Entité": "Qui",
+      "Observation": "Observation"
+    }
+  ]
 }
