@@ -227,10 +227,47 @@ const Exigences = ({}) => (
       Exigences non fonctionnelles
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTableau
-        title="Acteurs"
-        data={DA.Fonctionnalites.FonctionnalitesApplicatif}
-      />
+      <BlocTexte title="Exigences sur les données">
+        <BlocTableau title="DICT" data={DA.Exigences.DICT} />
+        <BlocTableau title="EBIOSCNIL" data={DA.Exigences.EBIOSCNIL} />
+      </BlocTexte>
+
+      <BlocTexte title="Période de service">
+        <BlocTableau
+          title="Periode Service"
+          data={DA.Exigences.PeriodeService}
+        />
+        <BlocTableau
+          title="Periode Service Charge"
+          data={DA.Exigences.PeriodeServiceCharge}
+        />
+      </BlocTexte>
+
+      <BlocTexte title="Garantie de service">
+        <BlocTableau
+          title="Garantie de service"
+          data={DA.Exigences.GartantieService}
+        />
+        <BlocTableau
+          title="Garantie de service Impact"
+          data={DA.Exigences.GarantieServiceImpact}
+        />
+      </BlocTexte>
+
+      <BlocTexte title="Performance">
+        <BlocTableau title="Performance" data={DA.Exigences.Performance} />
+      </BlocTexte>
+
+      <BlocTexte title="Exploitabilité">
+        <BlocTableau
+          title="Exploitabilité"
+          data={DA.Exigences.Exploitabilité}
+        />
+        <BlocTableau
+          title="Exploitabilité Impacts"
+          data={DA.Exigences.ExploitabiliteImpact}
+        />
+      </BlocTexte>
     </div>
   </div>
 );

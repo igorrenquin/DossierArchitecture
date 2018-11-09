@@ -414,7 +414,154 @@
     ]
   },
 
-  "Exigences": {},
+  "Exigences": {
+    "DICT": [
+      {
+        "Exigence": "Exigence de disponibilité",
+        "Objectifs": "D du DICT"
+      },
+      {
+        "Exigence": "Exigence d'intégrité",
+        "Objectifs": "I du DICT"
+      },
+      {
+        "Exigence": "Exigence de confidentialité",
+        "Objectifs": "C du DICT"
+      },
+      {
+        "Exigence": "Exigence de traçabilité",
+        "Objectifs": "T du DICT"
+      }
+    ],
+    "EBIOSCNIL": [
+      {
+        "Document": "Etude OSCAR",
+        "Lien": "Lien vers l'étude OSCAR"
+      },
+      {
+        "Document": "Etude EBIOS",
+        "Lien": "Lien vers l'étude EBIOS"
+      },
+      {
+        "Document": "Dossier CNIL",
+        "Lien": "Lien vers le dossier CNIL"
+      }
+    ],
+    "PeriodeService": [
+      {
+        "Période": "Standard",
+        "Début": "Tmp début",
+        "Fin": "Tmp fin",
+        "NBC": "nb NBC",
+        "NBS": "nb NBS"
+      },
+      {
+        "Période": "Charge",
+        "Début": "Tmp début",
+        "Fin": "Tmp fin",
+        "NBC": "nb NBC",
+        "NBS": "nb NBS"
+      },
+      {
+        "Période": "Critique",
+        "Début": "Tmp début",
+        "Fin": "Tmp fin",
+        "NBC": "nb NBC",
+        "NBS": "nb NBS"
+      }
+    ],
+    "PeriodeServiceCharge": [
+      {
+        "Description": "Description de la charge",
+        "": "Blabla sur la charge"
+      }
+    ],
+    "GartantieService": [
+      {
+        "Application": "Plage Service Infogérance",
+        "Appli": "tbd",
+        "Standard": "24 H"
+      },
+      {
+        "Application": "Perte de Données Maximale Admissible",
+        "Appli": "tbd",
+        "Standard": "24 H"
+      },
+      {
+        "Application": "Durée Maximale d'Interruption Admissible",
+        "Appli": "tbd",
+        "Standard": "24 H"
+      },
+      {
+        "Application": "Durée de Rétention",
+        "Appli": "tbd",
+        "Standard": "1 S"
+      }
+    ],
+    "GarantieServiceImpact": [
+      {
+        "Impact": "Impact Métier en cas de perte de données",
+        "Description": "Blabla sur la perte de données"
+      },
+      {
+        "Impact": "Impact Métier en cas de défaillance du service",
+        "Description": "Blabla sur la défaillance du service"
+      }
+    ],
+    "Performance": [
+      {
+        "TempsReponse": "Affichage page d'accueil",
+        "Standard": "T en S",
+        "Charge": "T en S"
+      },
+      {
+        "TempsReponse": "Affichage page simple",
+        "Standard": "T en S",
+        "Charge": "T en S"
+      },
+      {
+        "TempsReponse": "Affichage page complexe",
+        "Standard": "T en S",
+        "Charge": "T en S"
+      },
+      {
+        "TempsReponse": "Affichage page requête simple",
+        "Standard": "T en S",
+        "Charge": "T en S"
+      },
+      {
+        "TempsReponse": "Affichage page requête complexe",
+        "Standard": "T en S",
+        "Charge": "T en S"
+      }
+    ],
+    "Exploitabilité": [
+      {
+        "Batch": "Standard",
+        "Plage": "Tmp début",
+        "Fréquence": "Tmp fin",
+        "Impact Métier": "nb NBC",
+        "Impact Charge": "nb NBS"
+      },
+      {
+        "Batch": "Standard",
+        "Plage": "Tmp début",
+        "Fréquence": "Tmp fin",
+        "Impact Métier": "nb NBC",
+        "Impact Charge": "nb NBS"
+      }
+    ],
+    "ExploitabiliteImpact": [
+      {
+        "Impact": "Impact Métier en cas d'anomalie",
+        "Description": "Blabla"
+      },
+      {
+        "Impact": "Impact Charge sur la performance  du service",
+        "Description": "Blabla"
+      }
+    ]
+  },
 
   "ArchiActeurProcessus": [
     {
