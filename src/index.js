@@ -160,6 +160,10 @@ const Fonctionnalites = ({}) => (
           data={DA.Fonctionnalites.SensibiliteBas}
         />
       </BlocTexte>
+      <BlocTableau
+        title="ServicesConnexes"
+        data={DA.Fonctionnalites.ServicesConnexes}
+      />
     </div>
   </div>
 );
@@ -178,10 +182,321 @@ const Contraintes = ({}) => (
       Contraintes - Volumétrie
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTexte title="Contraintes légales">
+        <BlocTableau title="Acteurs" data={DA.Contraintes.ContraintesLegales} />
+      </BlocTexte>
+      <BlocTexte title="Contraintes métiers">
+        <BlocTableau title="Acteurs" data={DA.Contraintes.ContraintesMetier} />
+      </BlocTexte>
+      <BlocTexte title="Normes & règles à respecter">
+        <BlocTableau title="Acteurs" data={DA.Contraintes.NormesRegles} />
+      </BlocTexte>
+      <BlocTexte title="Dépendances avec d'autres SI">
+        <BlocTableau title="Acteurs" data={DA.Contraintes.DependancesSI} />
+      </BlocTexte>
+      <BlocTexte title="Dépendances avec le poste de travail">
+        <BlocTableau title="Acteurs" data={DA.Contraintes.DependancesP2T} />
+      </BlocTexte>
+    </div>
+  </div>
+);
+
+const Exigences = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Exigences non fonctionnelles
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
       <BlocTableau
         title="Acteurs"
         data={DA.Fonctionnalites.FonctionnalitesApplicatif}
       />
+    </div>
+  </div>
+);
+
+const ArchiActeurProcessus = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Schèma d'architecture acteurs et processus
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau
+        title="Schéma acteurs & processus"
+        data={DA.ArchiActeurProcessus}
+      />
+    </div>
+  </div>
+);
+
+const ArchiFonctionnel = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Schèma d'architecture fonctionnelle
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau
+        title="Schéma acteurs & processus"
+        data={DA.ArchiFonctionnel}
+      />
+    </div>
+  </div>
+);
+
+const ArchiApplicative = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Schèma d'architecture applicative
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau
+        title="Schéma acteurs & processus"
+        data={DA.ArchiApplicative}
+      />
+    </div>
+  </div>
+);
+
+const ArchiTechnique = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Schèma d'architecture acteurs et processus
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau
+        title="Schéma acteurs & processus"
+        data={DA.ArchiTechnique}
+      />
+    </div>
+  </div>
+);
+
+const ServeursComposants = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Serveurs & Composants applicatifs
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+    </div>
+  </div>
+);
+
+const MatricesFlux = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Matrices des flux applicatifs & système
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+    </div>
+  </div>
+);
+
+const Dimmenssionnement = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Dimmenssionnement du SI
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+    </div>
+  </div>
+);
+
+const UrlCertificats = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      URLs & Certificats
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+    </div>
+  </div>
+);
+
+const Infogerance = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Infogérance
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+    </div>
+  </div>
+);
+
+const Sauvegarde = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Sauvegarde
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+    </div>
+  </div>
+);
+
+const SupervisionAntivirus = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Supervision & Antivirus
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+    </div>
+  </div>
+);
+
+const Documentations = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Documentations
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+    </div>
+  </div>
+);
+
+const Observations = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Observations
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+    </div>
+  </div>
+);
+
+const Lifecycle = ({}) => (
+  <div style={{ border: "1px solid rgb(95, 74, 121)", margin: 10 }}>
+    <div
+      style={{
+        background: "rgb(199, 145, 65)",
+        height: 40,
+        fontSize: "1.4em",
+        lineHeight: "40px",
+        color: "white"
+      }}
+    >
+      Cycle de vie
+    </div>
+    <div style={{ padding: 10, background: "#f2eff5" }}>
+      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
     </div>
   </div>
 );
@@ -192,6 +507,24 @@ function App() {
       <Acteurs {...DA} />
       <Fonctionnalites {...DA} />
       <Contraintes {...DA} />
+      <Exigences {...DA} />
+
+      <ArchiActeurProcessus {...DA} />
+      <ArchiFonctionnel {...DA} />
+      <ArchiApplicative {...DA} />
+      <ArchiTechnique {...DA} />
+
+      <ServeursComposants {...DA} />
+      <MatricesFlux {...DA} />
+      <Dimmenssionnement {...DA} />
+      <UrlCertificats {...DA} />
+
+      <Infogerance {...DA} />
+      <Sauvegarde {...DA} />
+      <SupervisionAntivirus {...DA} />
+      <Documentations {...DA} />
+      <Observations {...DA} />
+      <Lifecycle {...DA} />
     </div>
   );
 }

@@ -1,4 +1,9 @@
 {
+  "Test": [
+    {
+      "": "en attendant de créer la donnée"
+    }
+  ],
   "Acteurs": {
     "NomProjet": ["Usine de développement"],
 
@@ -251,16 +256,109 @@
         "Public": "Statistiques publiables",
         "": false
       }
+    ],
+    "ServicesConnexes": [
+      {
+        "Référentiel de données": "Annuaires",
+        "Mode d'échange": "Mode 1",
+        "MCAS": true,
+        "RIE": false,
+        "EXT": false,
+        "PUB": false
+      },
+      {
+        "Référentiel de données": "Messagerie",
+        "Mode d'échange": "Mode 1",
+        "MCAS": true,
+        "RIE": false,
+        "EXT": false,
+        "PUB": false
+      }
     ]
   },
-  "Contraintes": {},
+
+  "Contraintes": {
+    "ContraintesLegales": [
+      {
+        "": "Contraintes légales 1"
+      },
+      {
+        "": "Contraintes légales 2"
+      }
+    ],
+    "ContraintesMetier": [
+      {
+        "": "Contraintes métiers 1"
+      },
+      {
+        "": "Contraintes métiers 2"
+      }
+    ],
+    "NormesRegles": [
+      {
+        "Sigle": "Sigle 1",
+        "Description": "Description"
+      }
+    ],
+    "DependancesSI": [
+      {
+        "NomSI": "SI 1",
+        "Fournisseur": true,
+        "Consommateur": true
+      },
+      {
+        "NomSI": "SI 2",
+        "Fournisseur": true,
+        "Consommateur": false
+      }
+    ],
+    "DependancesP2T": [
+      {
+        "Composant": "O.S.",
+        "Description": "Information sur l'O.S. du P2T"
+      },
+      {
+        "Composant": "Bureautique",
+        "Description": "Information sur la suite bureautique"
+      },
+      {
+        "Composant": "Navigateur",
+        "Description": "Information sur le navigateur"
+      },
+      {
+        "Composant": "Plugin / Addin",
+        "Description": "Information sur les Plugin / Addin"
+      },
+      {
+        "Composant": "Périphérique",
+        "Description": "Information sur les Périphérique"
+      }
+    ]
+  },
 
   "Exigences": {},
 
-  "ArchiActeurProcessus": {},
-  "ArchiFonctionnel": {},
-  "ArchiActeurApplicative": {},
-  "ArchiActeurTechnique": {},
+  "ArchiActeurProcessus": [
+    {
+      "": "Lien vers le schéma Acteurs & processus"
+    }
+  ],
+
+  "ArchiFonctionnel": [
+    {
+      "": "Lien vers le schéma d'architecture fonctionnel"
+    }
+  ],
+  "ArchiApplicative": [
+    {
+      "": "Lien vers le schéma d'architecture applicative"
+    }
+  ],
+  "ArchiTechnique": [
+    {
+      "": "Lien vers le schéma d'architecture technique"
+    }
+  ],
 
   "ServeursComposants": {},
   "MatricesFlux": {},
@@ -269,7 +367,7 @@
 
   "Infogerance": {},
   "Sauvegarde": {},
-  "Supervision": {},
+  "SupervisionAntivirus": {},
   "Documentations": {},
   "Observations": {},
   "Lifecycle": {}
