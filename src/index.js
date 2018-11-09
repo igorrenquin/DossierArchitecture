@@ -197,6 +197,18 @@ const Contraintes = ({}) => (
       <BlocTexte title="Dépendances avec le poste de travail">
         <BlocTableau title="Acteurs" data={DA.Contraintes.DependancesP2T} />
       </BlocTexte>
+      <BlocTexte title="Volumétrie données du SI">
+        <BlocTableau title="Acteurs" data={DA.Contraintes.VolumetrieDonnees} />
+      </BlocTexte>
+      <BlocTexte title="Volumétrie fichiers du SI">
+        <BlocTableau title="Acteurs" data={DA.Contraintes.VolumetrieFichiers} />
+      </BlocTexte>
+      <BlocTexte title="Réduction volumétrie données & fichiers du SI">
+        <BlocTableau
+          title="Acteurs"
+          data={DA.Contraintes.ReductionVolumetrie}
+        />
+      </BlocTexte>
     </div>
   </div>
 );

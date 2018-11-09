@@ -333,6 +333,84 @@
         "Composant": "Périphérique",
         "Description": "Information sur les Périphérique"
       }
+    ],
+    "VolumetrieDonnees": [
+      {
+        "Information": "Nombre d'enregistrement à récupérer",
+        "Valeur": "Valeur D1"
+      },
+      {
+        "Information": "Nombre d'enregistrement / an",
+        "Valeur": "Valeur D2"
+      },
+      {
+        "Information": "Taille moyenne enregistrement (KO)",
+        "Valeur": "Valeur D3"
+      },
+      {
+        "Information": "Nombre d'années d'enregistrements en BDD",
+        "Valeur": "Valeur D4"
+      },
+      {
+        "Information": "Volume BDD initial (GO)",
+        "Valeur": "D5=(D1xD3)/1024²"
+      },
+      {
+        "Information": "Volume BDD annuel (GO)",
+        "Valeur": "D6=(D2xD3)/1024²"
+      },
+      {
+        "Information": "Volume BDD TOTAL (GO)",
+        "Valeur": "D7=(D4xD6)+D5"
+      }
+    ],
+    "VolumetrieFichiers": [
+      {
+        "Information": "Nombre d'enregistremende fichiers à récupérer",
+        "Valeur": "Valeur F1"
+      },
+      {
+        "Information": "Nombre de fichiers / an",
+        "Valeur": "Valeur F2"
+      },
+      {
+        "Information": "Taille moyenne d'un fichier (MO)",
+        "Valeur": "Valeur F3"
+      },
+      {
+        "Information": "Nombre d'années dde fichiers",
+        "Valeur": "Valeur F4"
+      },
+      {
+        "Information": "Volume BDD initial (GO)",
+        "Valeur": "F5=(F1xF3)/1024²"
+      },
+      {
+        "Information": "Volume BDD annuel (GO)",
+        "Valeur": "F6=(F2xF3)/1024²"
+      },
+      {
+        "Information": "Volume BDD TOTAL (GO)",
+        "Valeur": "F7=(F4xF6)+F5"
+      }
+    ],
+    "ReductionVolumetrie": [
+      {
+        "Information": "Purge de données dans la BDD",
+        "Valeur": true
+      },
+      {
+        "Information": "Purge de fichiers dans le FS",
+        "Valeur": false
+      },
+      {
+        "Information": "Archivage des données hors SI",
+        "Valeur": true
+      },
+      {
+        "Information": "Archivage des fichiers hors SI",
+        "Valeur": true
+      }
     ]
   },
 
