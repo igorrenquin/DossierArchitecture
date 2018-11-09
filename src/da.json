@@ -1,0 +1,276 @@
+{
+  "Acteurs": {
+    "NomProjet": ["Usine de développement"],
+
+    "ContexteProjet": ["Contexte du Projet 1", "Contexte du Projet 2"],
+
+    "ObjectifsProjet": ["Mon objectif projet 1", "Mon objectif projet 2"],
+
+    "EnjeuxProjet": ["Mon enjeu projet 1", "Mon enjeu projet 2"],
+
+    "PlanningProjet": [
+      {
+        "version": "V1",
+        "date": "12-2018",
+        "commentaires": "GitLab + Pipelines + K8b + Supervision"
+      },
+      {
+        "version": "V2",
+        "date": "06-2019",
+        "commentaires": ""
+      }
+    ],
+
+    "ActeursProjet": [
+      {
+        "Rôle": "MOA",
+        "Nom": "",
+        "Fonction": "",
+        "Entite": ""
+      },
+      {
+        "Rôle": "AMOA",
+        "Nom": "",
+        "Fonction": "",
+        "Entite": ""
+      },
+      {
+        "Rôle": "MOE",
+        "Nom": "",
+        "Fonction": "",
+        "Entite": ""
+      },
+      {
+        "Rôle": "AMOE",
+        "Nom": "",
+        "Fonction": "",
+        "Entite": ""
+      },
+      {
+        "Rôle": "Architecte",
+        "Nom": "",
+        "Fonction": "",
+        "Entite": ""
+      },
+      {
+        "Rôle": "Intégrateur",
+        "Nom": "",
+        "Fonction": "",
+        "Entite": ""
+      },
+      {
+        "Rôle": "Production",
+        "Nom": "",
+        "Fonction": "",
+        "Entite": ""
+      }
+    ],
+
+    "ActeursMetier": [
+      {
+        "Profils Acteurs": "Acteur métier 1",
+        "MCAS": true,
+        "RIE": false,
+        "EXT": false,
+        "PUB": false
+      },
+      {
+        "Profils Acteurs": "Acteur métier 2",
+        "MCAS": false,
+        "RIE": false,
+        "EXT": true,
+        "PUB": false
+      }
+    ]
+  },
+
+  "Fonctionnalites": {
+    "FonctionnalitesApplicatif": [
+      {
+        "Fonctionnalités du SI": "Fonctionnalité 1",
+        "MCAS": true,
+        "RIE": false,
+        "EXT": false,
+        "PUB": false
+      },
+      {
+        "Fonctionnalités du SI": "Fonctionnalité 2",
+        "MCAS": true,
+        "RIE": true,
+        "EXT": true,
+        "PUB": true
+      }
+    ],
+    "DonneesMetier": [
+      {
+        "Donnée métier": "Donnée métier 1",
+        "MCAS": true,
+        "RIE": false,
+        "EXT": false,
+        "PUB": false
+      },
+      {
+        "Donnée métier": "Donnée métier 2",
+        "MCAS": true,
+        "RIE": false,
+        "EXT": false,
+        "PUB": false
+      }
+    ],
+    "FichiersMetier": [
+      {
+        "Fichier métier": "Fichier métier 1",
+        "MCAS": true,
+        "RIE": false,
+        "EXT": false,
+        "PUB": false
+      },
+      {
+        "Fichier métier": "Fichier métier 2",
+        "MCAS": true,
+        "RIE": false,
+        "EXT": false,
+        "PUB": false
+      }
+    ],
+
+    "ReferentielsDonnees": [
+      {
+        "Référentiel de données": "Référentiel 1",
+        "Mode d'échange": "Mode 1",
+        "MCAS": true,
+        "RIE": false,
+        "EXT": false,
+        "PUB": false
+      },
+      {
+        "Référentiel de données": "Référentiel 2",
+        "Mode d'échange": "Mode 2",
+        "MCAS": true,
+        "RIE": false,
+        "EXT": false,
+        "PUB": false
+      }
+    ],
+
+    "SensibiliteHaut": [
+      {
+        "Très sensible": "NIR",
+        "": false
+      },
+      {
+        "Très sensible": "Médicales",
+        "": false
+      },
+      {
+        "Très sensible": "Vie privée",
+        "": false
+      },
+      {
+        "Très sensible": "Justice",
+        "": false
+      },
+      {
+        "Très sensible": "Identité",
+        "": false
+      },
+      {
+        "Très sensible": "Biométrique",
+        "": false
+      },
+      {
+        "Très sensible": "Mécanisme de fraude",
+        "": false
+      },
+      {
+        "Très sensible": "Architecture sécurité",
+        "": false
+      },
+      {
+        "Très sensible": "Failles & vulnérabilités",
+        "": false
+      },
+      {
+        "Très sensible": "Patrimoine",
+        "": false
+      },
+      {
+        "Très sensible": "Appartenance syndicale",
+        "": false
+      }
+    ],
+    "SensibiliteMoyen": [
+      {
+        "Sensible": "Architecture technique",
+        "": false
+      },
+      {
+        "Sensible": "Organisationnel",
+        "": false
+      },
+      {
+        "Sensible": "Etat civil",
+        "": false
+      },
+      {
+        "Sensible": "Adresse postale",
+        "": false
+      },
+      {
+        "Sensible": "Vie personnelle",
+        "": false
+      },
+      {
+        "Sensible": "Vie professionnelle",
+        "": false
+      },
+      {
+        "Sensible": "Mouvements salariaux",
+        "": false
+      },
+      {
+        "Sensible": "Santé économique",
+        "": false
+      }
+    ],
+
+    "SensibiliteBas": [
+      {
+        "Public": "Editoriaux",
+        "": false
+      },
+      {
+        "Public": "Publication Extranet",
+        "": false
+      },
+      {
+        "Public": "Campagne de communication",
+        "": false
+      },
+      {
+        "Public": "Statistiques publiables",
+        "": false
+      }
+    ]
+  },
+  "Contraintes": {},
+
+  "Exigences": {},
+
+  "ArchiActeurProcessus": {},
+  "ArchiFonctionnel": {},
+  "ArchiActeurApplicative": {},
+  "ArchiActeurTechnique": {},
+
+  "ServeursComposants": {},
+  "MatricesFlux": {},
+  "Dimmenssionnement": {},
+  "UrlCertificats": {},
+
+  "Infogerance": {},
+  "Sauvegarde": {},
+  "Supervision": {},
+  "Documentations": {},
+  "Observations": {},
+  "Lifecycle": {}
+}
