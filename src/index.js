@@ -104,7 +104,9 @@ const Acteurs = ({}) => (
           ))}
         </ul>
       </BlocTexte>
-      <BlocTableau title="Planning" data={DA.Acteurs.PlanningProjet} />
+      <BlocTexte title="Planning du projet">
+        <BlocTableau title="Planning" data={DA.Acteurs.PlanningProjet} />
+      </BlocTexte>
       <BlocTexte title="Acteurs du Projet">
         <BlocTableau title="Acteurs" data={DA.Acteurs.ActeursProjet} />
       </BlocTexte>
@@ -393,7 +395,22 @@ const MatricesFlux = ({}) => (
       Matrices des flux applicatifs & système
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+      <BlocTexte title="Matrices de flux applicative et système">
+        <BlocTableau
+          title="Matrice de flux applicative"
+          data={DA.MatriceFlux.MatriceFluxApplicative}
+        />
+      </BlocTexte>
+      <BlocTexte title="Matrices de flux applicative et système">
+        <BlocTableau
+          title="Matrice de flux applicative"
+          data={DA.MatriceFlux.MatriceFluxApplicative}
+        />
+        <BlocTableau
+          title="Matrice de flux Systeme"
+          data={DA.MatriceFlux.MatriceFluxSysteme}
+        />
+      </BlocTexte>
     </div>
   </div>
 );
@@ -412,7 +429,18 @@ const Dimmenssionnement = ({}) => (
       Dimmenssionnement du SI
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+      <BlocTexte title="Justifications PDMA, DMIA, Performances">
+        <BlocTableau
+          title="Dimmenssionnement PDP"
+          data={DA.Dimmenssionnement.JustificationPerformance}
+        />
+      </BlocTexte>
+      <BlocTexte title="Justifications allocations ressources matériel">
+        <BlocTableau
+          title="Dimmenssionnement Ressources"
+          data={DA.Dimmenssionnement.JustificationDimmenssionnement}
+        />
+      </BlocTexte>
     </div>
   </div>
 );
@@ -450,7 +478,12 @@ const Infogerance = ({}) => (
       Infogérance
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+      <BlocTexte title="Niveau de prise en charge infogérant">
+        <BlocTableau title="PEC" data={DA.Infogerance.PEC} />
+      </BlocTexte>
+      <BlocTexte title="Plage de maintenance">
+        <BlocTableau title="PEC" data={DA.Infogerance.PlageMaintenance} />
+      </BlocTexte>
     </div>
   </div>
 );

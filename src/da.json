@@ -259,7 +259,7 @@
     ],
     "ServicesConnexes": [
       {
-        "Référentiel de données": "Annuaires",
+        "Service utilisé": "Annuaires",
         "Mode d'échange": "Mode 1",
         "MCAS": true,
         "RIE": false,
@@ -267,7 +267,7 @@
         "PUB": false
       },
       {
-        "Référentiel de données": "Messagerie",
+        "Service utilisé": "Messagerie",
         "Mode d'échange": "Mode 1",
         "MCAS": true,
         "RIE": false,
@@ -587,13 +587,215 @@
 
   "ServeursComposants": {},
 
-  "MatricesFlux": {},
+  "MatriceFlux": {
+    "MatriceFluxApplicative": [
+      {
+        "NumeroFlux": "1",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "2",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "3",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "4",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "5",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "6",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "7",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "8",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "9",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "10",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "11",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "12",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      }
+    ],
+    "MatriceFluxSysteme": [
+      {
+        "NumeroFlux": "1",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "2",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "3",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "4",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "NumeroFlux": "5",
+        "SourceFlux": "Qui initie le flux",
+        "DestinationFlux": "Qui reçoit le flux",
+        "PortFlux": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      }
+    ]
+  },
 
-  "Dimmenssionnement": {},
+  "Dimmenssionnement": {
+    "JustificationPerformance": [
+      {
+        "PDP": "Perte de Données Maximale Admissible",
+        "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter"
+      },
+      {
+        "PDP": "Durée Maximale d'Interruption Admissible",
+        "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter"
+      },
+      {
+        "PDP": "Performances applicatives",
+        "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter"
+      }
+    ],
+
+    "JustificationDimmenssionnement": [
+      {
+        "Couche": "Couche front WEB",
+        "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter",
+        "nbCPU": "1 à n",
+        "nbRAM": "1 à n"
+      },
+      {
+        "Couche": "Couche métier APP",
+        "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter",
+        "nbCPU": "1 à n",
+        "nbRAM": "1 à n"
+      },
+      {
+        "Couche": "Couche back DATA",
+        "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter",
+        "nbCPU": "1 à n",
+        "nbRAM": "1 à n"
+      }
+    ]
+  },
 
   "UrlCertificats": {},
 
-  "Infogerance": {},
+  "Infogerance": {
+    "PEC": [
+      {
+        "Environnement": "PRODUCTION",
+        "Niveau": "A compléter",
+        "Commentaire": ""
+      },
+      {
+        "Environnement": "PRE-PRODUCTION",
+        "Niveau": "A compléter",
+        "Commentaire": ""
+      }
+    ],
+    "PlageMaintenance": [
+      {
+        "Environnement": "PRODUCTION",
+        "Semaine": "A compléter",
+        "Weekend": "A compléter"
+      },
+      {
+        "Environnement": "PRE-PRODUCTION",
+        "Semaine": "A compléter",
+        "Weekend": "A compléter"
+      }
+    ]
+  },
 
   "Sauvegarde": {},
 
