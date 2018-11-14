@@ -585,145 +585,200 @@
     }
   ],
 
-  "ServeursComposants": {},
+  "ServeursComposants": {
+    "Serveur1": {
+      "RessourcesServeur1": [
+        {
+          "NomServeur": "Nom du Serveur",
+          "Type": "Machine virtuelle",
+          "Rôle": "Reverse Proxy",
+          "CPU": "2",
+          "RAM": "4 Go",
+          "HDD Système": "50 Go",
+          "HDD Data": "S"
+        }
+      ],
+      "Serveur1Composants": [
+        {
+          "Catégorie": "O.S.",
+          "Composant": "CentOS",
+          "Version": "7.5",
+          "Rôle": ""
+        },
+        {
+          "Catégorie": "RP",
+          "Composant": "Ngnix",
+          "Version": "1.15",
+          "Rôle": "Reverse Proxy"
+        }
+      ]
+    },
+    "Serveur2": {
+      "RessourcesServeur2": [
+        {
+          "NomServeur": "Nom du Serveur",
+          "Type": "Machine virtuelle",
+          "Rôle": "Reverse Proxy",
+          "CPU": "2",
+          "RAM": "4 Go",
+          "HDD Système": "50 Go",
+          "HDD Data": "S"
+        }
+      ],
+      "Serveur2Composants": [
+        {
+          "Catégorie": "O.S.",
+          "Composant": "CentOS",
+          "Version": "7.5",
+          "Rôle": ""
+        },
+        {
+          "Catégorie": "RP",
+          "Composant": "Ngnix",
+          "Version": "1.15",
+          "Rôle": "Reverse Proxy"
+        }
+      ]
+    }
+  },
 
   "MatriceFlux": {
     "MatriceFluxApplicative": [
       {
-        "NumeroFlux": "1",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
+        "N° flux": "1",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "N° flux": "2",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
+        "Protocole": "Protocole du flux",
+        "Commentaire": "Commentaire sur le flux"
+      },
+      {
+        "N° flux": "3",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
         "PortFlux": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "2",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "4",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "3",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "5",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "4",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "6",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "5",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "7",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "6",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "8",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "7",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "9",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "8",
+        "N° flux": "10",
         "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "9",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "11",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "10",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
-        "Protocole": "Protocole du flux",
-        "Commentaire": "Commentaire sur le flux"
-      },
-      {
-        "NumeroFlux": "11",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
-        "Protocole": "Protocole du flux",
-        "Commentaire": "Commentaire sur le flux"
-      },
-      {
-        "NumeroFlux": "12",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "12",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       }
     ],
     "MatriceFluxSysteme": [
       {
-        "NumeroFlux": "1",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "1",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "2",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "2",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "3",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "3",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "4",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "4",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       },
       {
-        "NumeroFlux": "5",
-        "SourceFlux": "Qui initie le flux",
-        "DestinationFlux": "Qui reçoit le flux",
-        "PortFlux": "Port du flux",
+        "N° flux": "5",
+        "Source": "Qui initie le flux",
+        "Destination": "Qui reçoit le flux",
+        "Port": "Port du flux",
         "Protocole": "Protocole du flux",
         "Commentaire": "Commentaire sur le flux"
       }
@@ -733,15 +788,15 @@
   "Dimmenssionnement": {
     "JustificationPerformance": [
       {
-        "PDP": "Perte de Données Maximale Admissible",
+        "": "Perte de Données Maximale Admissible",
         "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter"
       },
       {
-        "PDP": "Durée Maximale d'Interruption Admissible",
+        "": "Durée Maximale d'Interruption Admissible",
         "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter"
       },
       {
-        "PDP": "Performances applicatives",
+        "": "Performances applicatives",
         "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter"
       }
     ],
@@ -768,7 +823,84 @@
     ]
   },
 
-  "UrlCertificats": {},
+  "UrlCertificats": {
+    "PRODURL1": {
+      "PRODURL1DATA": [
+        {
+          "URL": "renseigner l'URL",
+          "Nom alternatif": "Renseigner les Subject Alternative Name",
+          "Equipement portant l'URL": " A renseigner"
+        }
+      ],
+      "PRODURL1Setting": [
+        {
+          "Usage": "A renseigner",
+          "SSL": "OUI ou NON",
+          "Type certificat": "Serveur, Client ou Client + Serveur",
+          "VIP": "OUI ou NON",
+          "LB | RP": "LB ou RP",
+          "Terminaison SSL": "OUI ou NON"
+        }
+      ]
+    },
+    "PRODURL2": {
+      "PRODURL2DATA": [
+        {
+          "URL": "renseigner l'URL",
+          "Nom alternatif": "Renseigner les Subject Alternative Name",
+          "Equipement portant l'URL": " A renseigner"
+        }
+      ],
+      "PRODURL2Setting": [
+        {
+          "Usage": "A renseigner",
+          "SSL": "OUI ou NON",
+          "Type certificat": "Serveur, Client ou Client + Serveur",
+          "VIP": "OUI ou NON",
+          "LB | RP": "LB ou RP",
+          "Terminaison SSL": "OUI ou NON"
+        }
+      ]
+    },
+    "PREPRODURL1": {
+      "PREPRODURL1DATA": [
+        {
+          "URL": "renseigner l'URL",
+          "Nom alternatif": "Renseigner les Subject Alternative Name",
+          "Equipement portant l'URL": " A renseigner"
+        }
+      ],
+      "PREPRODURL1Setting": [
+        {
+          "Usage": "A renseigner",
+          "SSL": "OUI ou NON",
+          "Type certificat": "Serveur, Client ou Client + Serveur",
+          "VIP": "OUI ou NON",
+          "LB | RP": "LB ou RP",
+          "Terminaison SSL": "OUI ou NON"
+        }
+      ]
+    },
+    "PREPRODURL2": {
+      "PREPRODURL2DATA": [
+        {
+          "URL": "renseigner l'URL",
+          "Nom alternatif": "Renseigner les Subject Alternative Name",
+          "Equipement portant l'URL": " A renseigner"
+        }
+      ],
+      "PREPRODURL2Setting": [
+        {
+          "Usage": "A renseigner",
+          "SSL": "OUI ou NON",
+          "Type certificat": "Serveur, Client ou Client + Serveur",
+          "VIP": "OUI ou NON",
+          "LB | RP": "LB ou RP",
+          "Terminaison SSL": "OUI ou NON"
+        }
+      ]
+    }
+  },
 
   "Infogerance": {
     "PEC": [
@@ -797,7 +929,56 @@
     ]
   },
 
-  "Sauvegarde": {},
+  "Sauvegarde": {
+    "SauvegardePRODQuotidienne": [
+      {
+        "Volume": "Système",
+        "Type": "Diffentielle-Full",
+        "Rétention": "durée de rétention"
+      },
+      {
+        "Volume": "DATA",
+        "Type": "Diffentielle-Full",
+        "Rétention": "durée de rétention"
+      }
+    ],
+    "SauvegardePRODHebdomadaire": [
+      {
+        "Volume": "Système",
+        "Type": "Diffentielle-Full",
+        "Rétention": "durée de rétention"
+      },
+      {
+        "Volume": "DATA",
+        "Type": "Diffentielle-Full",
+        "Rétention": "durée de rétention"
+      }
+    ],
+    "SauvegardePREPRODQuotidienne": [
+      {
+        "Volume": "Système",
+        "Type": "Diffentielle-Full",
+        "Rétention": "durée de rétention"
+      },
+      {
+        "Volume": "DATA",
+        "Type": "Diffentielle-Full",
+        "Rétention": "durée de rétention"
+      }
+    ],
+    "SauvegardePREPRODHebdomadaire": [
+      {
+        "Volume": "Système",
+        "Type": "Diffentielle-Full",
+        "Rétention": "durée de rétention"
+      },
+      {
+        "Volume": "DATA",
+        "Type": "Diffentielle-Full",
+        "Rétention": "durée de rétention"
+      }
+    ]
+  },
 
   "Antivirus": [
     {

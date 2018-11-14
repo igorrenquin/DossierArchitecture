@@ -376,7 +376,26 @@ const ServeursComposants = ({}) => (
       Serveurs & Composants applicatifs
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+      <BlocTexte title="Serveur 1">
+        <BlocTableau
+          title="Schéma acteurs & processus"
+          data={DA.ServeursComposants.Serveur1.RessourcesServeur1}
+        />
+        <BlocTableau
+          title="Schéma acteurs & processus"
+          data={DA.ServeursComposants.Serveur1.Serveur1Composants}
+        />
+      </BlocTexte>
+      <BlocTexte title="Serveur 2">
+        <BlocTableau
+          title="Schéma acteurs & processus"
+          data={DA.ServeursComposants.Serveur2.RessourcesServeur2}
+        />
+        <BlocTableau
+          title="Schéma acteurs & processus"
+          data={DA.ServeursComposants.Serveur2.Serveur2Composants}
+        />
+      </BlocTexte>
     </div>
   </div>
 );
@@ -395,17 +414,13 @@ const MatricesFlux = ({}) => (
       Matrices des flux applicatifs & système
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTexte title="Matrices de flux applicative et système">
+      <BlocTexte title="Matrices de flux applicative">
         <BlocTableau
           title="Matrice de flux applicative"
           data={DA.MatriceFlux.MatriceFluxApplicative}
         />
       </BlocTexte>
-      <BlocTexte title="Matrices de flux applicative et système">
-        <BlocTableau
-          title="Matrice de flux applicative"
-          data={DA.MatriceFlux.MatriceFluxApplicative}
-        />
+      <BlocTexte title="Matrices de flux système">
         <BlocTableau
           title="Matrice de flux Systeme"
           data={DA.MatriceFlux.MatriceFluxSysteme}
@@ -459,7 +474,52 @@ const UrlCertificats = ({}) => (
       URLs & Certificats
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+      <BlocTexte title="PRODUCTION">
+        <BlocTexte title="URL 1">
+          <BlocTableau
+            title="URL de Production"
+            data={DA.UrlCertificats.PRODURL1.PRODURL1DATA}
+          />
+          <BlocTableau
+            title="URL de Production"
+            data={DA.UrlCertificats.PRODURL1.PRODURL1Setting}
+          />
+        </BlocTexte>
+      </BlocTexte>
+      <BlocTexte title="PRODUCTION">
+        <BlocTexte title="URL 2">
+          <BlocTableau
+            title="URL de Production"
+            data={DA.UrlCertificats.PRODURL2.PRODURL2DATA}
+          />
+          <BlocTableau
+            title="URL de Production"
+            data={DA.UrlCertificats.PRODURL2.PRODURL2Setting}
+          />
+        </BlocTexte>
+      </BlocTexte>
+      <BlocTexte title="PRE-PRODUCTION">
+        <BlocTexte title="URL 1">
+          <BlocTableau
+            title="URL de Production"
+            data={DA.UrlCertificats.PREPRODURL1.PREPRODURL1DATA}
+          />
+          <BlocTableau
+            title="URL de Production"
+            data={DA.UrlCertificats.PREPRODURL1.PREPRODURL1Setting}
+          />
+        </BlocTexte>
+      </BlocTexte>
+      <BlocTexte title="URL 2">
+        <BlocTableau
+          title="URL de Production"
+          data={DA.UrlCertificats.PREPRODURL2.PREPRODURL2DATA}
+        />
+        <BlocTableau
+          title="URL de Production"
+          data={DA.UrlCertificats.PREPRODURL2.PREPRODURL2Setting}
+        />
+      </BlocTexte>
     </div>
   </div>
 );
@@ -502,7 +562,30 @@ const Sauvegarde = ({}) => (
       Sauvegarde
     </div>
     <div style={{ padding: 10, background: "#f2eff5" }}>
-      <BlocTableau title="Schéma acteurs & processus" data={DA.Test} />
+      <BlocTexte title="Sauvegarde PRODUCTION  quotidienne">
+        <BlocTableau
+          title="Schéma acteurs & processus"
+          data={DA.Sauvegarde.SauvegardePRODQuotidienne}
+        />
+      </BlocTexte>
+      <BlocTexte title="Sauvegarde PRODUCTION  hebdomadaire">
+        <BlocTableau
+          title="Schéma acteurs & processus"
+          data={DA.Sauvegarde.SauvegardePRODHebdomadaire}
+        />
+      </BlocTexte>
+      <BlocTexte title="Sauvegarde PRE-PRODUCTION  quotidienne">
+        <BlocTableau
+          title="Schéma acteurs & processus"
+          data={DA.Sauvegarde.SauvegardePREPRODQuotidienne}
+        />
+      </BlocTexte>
+      <BlocTexte title="Sauvegarde PRE-PRODUCTION  hebdomadaire">
+        <BlocTableau
+          title="Schéma acteurs & processus"
+          data={DA.Sauvegarde.SauvegardePREPRODHebdomadaire}
+        />
+      </BlocTexte>
     </div>
   </div>
 );
