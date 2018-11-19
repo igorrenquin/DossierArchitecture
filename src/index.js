@@ -34,7 +34,10 @@ const BlocTitle = ({
   backgroundColor = "rgb(199, 145, 65)",
   children
 }) => (
-  <div style={{ border: `1px solid ${backgroundColor}`, margin: 10 }}>
+  <div
+    style={{ border: `1px solid ${backgroundColor}`, margin: 5 }}
+    className="pure-u-1 "
+  >
     <div
       style={{
         background: backgroundColor,
@@ -60,6 +63,14 @@ const formatCell = value => {
   }
 };
 
+const getTdStyle = (key, value) => {
+  if (value === true || value === false) {
+    return {
+      textAlign: "center"
+    };
+  }
+};
+
 const BlocTableau = ({ title, data }) => {
   const keys = Object.keys(data[0]);
   return (
@@ -75,8 +86,13 @@ const BlocTableau = ({ title, data }) => {
     >
       <thead>
         <tr>
-          {keys.map(k => (
-            <th key={k}>{k}</th>
+          {keys.map((k, i) => (
+            <th
+              key={k + "" + i}
+              style={getTdStyle(k, data.length && data[0][k])}
+            >
+              {k}
+            </th>
           ))}
         </tr>
       </thead>
@@ -84,7 +100,9 @@ const BlocTableau = ({ title, data }) => {
         {data.map((row, i) => (
           <tr key={i}>
             {keys.map((k, j) => (
-              <td key={row[k] + j}>{formatCell(row[k])}</td>
+              <td key={row[k] + "" + j} style={getTdStyle(k, row[k])}>
+                {formatCell(row[k])}
+              </td>
             ))}
           </tr>
         ))}
@@ -101,15 +119,15 @@ const Acteurs = ({}) => (
     </BlocTexte>
     <BlocTexte title="Objectifs du projet">
       <ul>
-        {DA.Acteurs.ObjectifsProjet.map(o => (
-          <li key={0}>{o}</li>
+        {DA.Acteurs.ObjectifsProjet.map((o, i) => (
+          <li key={o + i}>{o}</li>
         ))}
       </ul>
     </BlocTexte>
     <BlocTexte title="Enjeux du projet">
       <ul>
-        {DA.Acteurs.EnjeuxProjet.map(o => (
-          <li key={0}>{o}</li>
+        {DA.Acteurs.EnjeuxProjet.map((o, i) => (
+          <li key={o + i}>{o}</li>
         ))}
       </ul>
     </BlocTexte>
@@ -476,7 +494,7 @@ const Lifecycle = ({}) => (
 
 function App() {
   return (
-    <div className="App">
+    <div className="App pure-g">
       <Acteurs {...DA} />
       <Fonctionnalites {...DA} />
       <Contraintes {...DA} />
