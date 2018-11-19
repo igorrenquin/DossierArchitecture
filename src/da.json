@@ -785,32 +785,32 @@
     ]
   },
 
-  "Dimmenssionnement": {
+  "Dimensionnement": {
     "JustificationPerformance": [
       {
         "": "Perte de Données Maximale Admissible",
-        "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter"
+        "Détail des hypothéses de calcul et résultats pour le dimensionnement": "A compléter"
       },
       {
         "": "Durée Maximale d'Interruption Admissible",
-        "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter"
+        "Détail des hypothéses de calcul et résultats pour le dimensionnement": "A compléter"
       },
       {
         "": "Performances applicatives",
-        "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter"
+        "Détail des hypothéses de calcul et résultats pour le dimensionnement": "A compléter"
       }
     ],
 
-    "JustificationDimmenssionnement": [
+    "JustificationDimensionnement": [
       {
         "Couche": "Couche front WEB",
-        "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter",
+        "Détail des hypothéses de calcul et résultats pour le dimensionnement": "A compléter",
         "nbCPU": "1 à n",
         "nbRAM": "1 à n"
       },
       {
         "Couche": "Couche métier APP",
-        "Détail des hypothéses de calcul et résultats pour le dimmenssionnement": "A compléter",
+        "Détail des hypothéses de calcul et résultats pour le dimensionnement": "A compléter",
         "nbCPU": "1 à n",
         "nbRAM": "1 à n"
       },
