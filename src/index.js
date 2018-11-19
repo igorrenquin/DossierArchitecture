@@ -145,7 +145,7 @@ const Acteurs = ({}) => (
 
 const Fonctionnalites = ({}) => (
   <BlocTitle
-    backgroundColor="rgb(95, 74, 121)"
+    backgroundColor="rgb(119, 145, 65)"
     title="Fonctionnalites - Données"
   >
     <BlocTableau
@@ -188,7 +188,7 @@ const Fonctionnalites = ({}) => (
 
 const Contraintes = ({}) => (
   <BlocTitle
-    backgroundColor="rgb(199, 145, 65)"
+    backgroundColor="rgb(225, 108, 34)"
     title="Contraintes - Volumétrie"
   >
     <BlocTexte title="Contraintes légales">
@@ -220,7 +220,7 @@ const Contraintes = ({}) => (
 
 const Exigences = ({}) => (
   <BlocTitle
-    backgroundColor="rgb(199, 145, 65)"
+    backgroundColor="rgb(146, 55, 54)"
     title="Exigences non fonctionnelles"
   >
     <BlocTexte title="Exigences sur les données">
@@ -263,7 +263,7 @@ const Exigences = ({}) => (
 
 const ArchiActeurProcessus = ({}) => (
   <BlocTitle
-    backgroundColor="rgb(199, 145, 65)"
+    backgroundColor="rgb(36, 88, 103)"
     title="Schèma d'architecture acteurs et processus"
   >
     <BlocTableau
@@ -275,7 +275,7 @@ const ArchiActeurProcessus = ({}) => (
 
 const ArchiFonctionnel = ({}) => (
   <BlocTitle
-    backgroundColor="rgb(199, 145, 65)"
+    backgroundColor="rgb(36, 88, 103)"
     title="Schèma d'architecture fonctionnelle"
   >
     <BlocTableau
@@ -287,7 +287,7 @@ const ArchiFonctionnel = ({}) => (
 
 const ArchiApplicative = ({}) => (
   <BlocTitle
-    backgroundColor="rgb(199, 145, 65)"
+    backgroundColor="rgb(36, 88, 103)"
     title="Schèma d'architecture applicative"
   >
     <BlocTableau
@@ -299,7 +299,7 @@ const ArchiApplicative = ({}) => (
 
 const ArchiTechnique = ({}) => (
   <BlocTitle
-    backgroundColor="rgb(199, 145, 65)"
+    backgroundColor="rgb(36, 88, 103)"
     title="Schèma d'architecture acteurs et processus"
   >
     <BlocTableau title="Schéma acteurs & processus" data={DA.ArchiTechnique} />
@@ -308,7 +308,7 @@ const ArchiTechnique = ({}) => (
 
 const ServeursComposants = ({}) => (
   <BlocTitle
-    backgroundColor="rgb(199, 145, 65)"
+    backgroundColor="rgb(74, 68, 43)"
     title="Serveurs & Composants applicatifs"
   >
     <BlocTexte title="Serveur 1">
@@ -336,7 +336,7 @@ const ServeursComposants = ({}) => (
 
 const MatricesFlux = ({}) => (
   <BlocTitle
-    backgroundColor="rgb(199, 145, 65)"
+    backgroundColor="rgb(74, 68, 43)"
     title="Matrices des flux applicatifs & système"
   >
     <BlocTexte title="Matrices de flux applicative">
@@ -354,25 +354,25 @@ const MatricesFlux = ({}) => (
   </BlocTitle>
 );
 
-const Dimmenssionnement = ({}) => (
-  <BlocTitle backgroundColor="rgb(199, 145, 65)" title="Dimensionnement du SI">
+const Dimensionnement = ({}) => (
+  <BlocTitle backgroundColor="rgb(74, 68, 43)" title="Dimensionnement du SI">
     <BlocTexte title="Justifications PDMA, DMIA, Performances">
       <BlocTableau
-        title="Dimmenssionnement PDP"
-        data={DA.Dimmenssionnement.JustificationPerformance}
+        title="Dimensionnement PDP"
+        data={DA.Dimensionnement.JustificationPerformance}
       />
     </BlocTexte>
     <BlocTexte title="Justifications allocations ressources matériel">
       <BlocTableau
-        title="Dimmenssionnement Ressources"
-        data={DA.Dimmenssionnement.JustificationDimmenssionnement}
+        title="Dimensionnement Ressources"
+        data={DA.Dimensionnement.JustificationDimensionnement}
       />
     </BlocTexte>
   </BlocTitle>
 );
 
 const UrlCertificats = ({}) => (
-  <BlocTitle backgroundColor="rgb(199, 145, 65)" title="URLs & Certificats">
+  <BlocTitle backgroundColor="rgb(74, 68, 43)" title="URLs & Certificats">
     <BlocTexte title="PRODUCTION">
       <BlocTexte title="URL 1">
         <BlocTableau
@@ -423,7 +423,7 @@ const UrlCertificats = ({}) => (
 );
 
 const Infogerance = ({}) => (
-  <BlocTitle backgroundColor="rgb(199, 145, 65)" title="Infogérance">
+  <BlocTitle backgroundColor="rgb(74, 68, 43)" title="Infogérance">
     <BlocTexte title="Niveau de prise en charge infogérant">
       <BlocTableau title="PEC" data={DA.Infogerance.PEC} />
     </BlocTexte>
@@ -434,7 +434,7 @@ const Infogerance = ({}) => (
 );
 
 const Sauvegarde = ({}) => (
-  <BlocTitle backgroundColor="rgb(199, 145, 65)" title="Sauvegarde">
+  <BlocTitle backgroundColor="rgb(74, 68, 43)" title="Sauvegarde">
     <BlocTexte title="Sauvegarde PRODUCTION  quotidienne">
       <BlocTableau
         title="Schéma acteurs & processus"
@@ -463,23 +463,20 @@ const Sauvegarde = ({}) => (
 );
 
 const Antivirus = ({}) => (
-  <BlocTitle
-    backgroundColor="rgb(199, 145, 65)"
-    title="Antivirus & Supervision"
-  >
+  <BlocTitle backgroundColor="rgb(74, 68, 43)" title="Antivirus & Supervision">
     <BlocTableau title="Antivirus" data={DA.Antivirus} />
     <BlocTableau title="Supervision" data={DA.Supervision} />
   </BlocTitle>
 );
 
 const Documentations = ({}) => (
-  <BlocTitle backgroundColor="rgb(199, 145, 65)" title="Documentations">
+  <BlocTitle backgroundColor="rgb(74, 68, 43)" title="Documentations">
     <BlocTableau title="Schéma acteurs & processus" data={DA.Documentations} />
   </BlocTitle>
 );
 
 const Observations = ({}) => (
-  <BlocTitle backgroundColor="rgb(199, 145, 65)" title="Observations">
+  <BlocTitle backgroundColor="rgb(74, 68, 43)" title="Observations">
     <BlocTableau title="Cycle de vie" data={DA.ObservationsMOE} />
     <BlocTableau title="Cycle de vie" data={DA.ObservationsMITECH} />
     <BlocTableau title="Cycle de vie" data={DA.ObservationsPROD} />
@@ -487,7 +484,7 @@ const Observations = ({}) => (
 );
 
 const Lifecycle = ({}) => (
-  <BlocTitle backgroundColor="rgb(199, 145, 65)" title="Cycle de vie">
+  <BlocTitle backgroundColor="rgb(74, 68, 43)" title="Cycle de vie">
     <BlocTableau title="Observation MOE" data={DA.Lifecycle} />
   </BlocTitle>
 );
@@ -507,7 +504,7 @@ function App() {
 
       <ServeursComposants {...DA} />
       <MatricesFlux {...DA} />
-      <Dimmenssionnement {...DA} />
+      <Dimensionnement {...DA} />
       <UrlCertificats {...DA} />
 
       <Infogerance {...DA} />
